@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         DatosLista2.add("2");
         DatosLista2.add("3");
         DatosLista2.add("4");
+        DatosLista2.add("5");
 
         Adaptador2=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, DatosLista2);
         Adaptador2.setDropDownViewResource((android.R.layout.simple_dropdown_item_1line));
@@ -66,6 +67,6 @@ public class MainActivity extends AppCompatActivity {
         Integer edificio;
 
         Ubicacion ub = new Ubicacion();
-        ub.setEdificio(textoSeleccionado);
+     //   ub.setEdificio(textoSeleccionado);
     }
 }
