@@ -4,13 +4,6 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <LinearLayout
-    android:layout_width="300dp"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_gravity="center"
-    >
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,65 +11,63 @@
         android:textSize="30dp"
         />
 
-    <TextView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Edificio"
-        android:textSize="20dp"
-        />
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edificio"
+            android:textSize="20dp"
+            />
 
-        />
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Piso"
-        android:textSize="20dp"
-        />
+            />
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Piso"
+            android:textSize="20dp"
+            />
 
-        />
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Aula/Lugar"
-        android:textSize="20dp"
-        />
+            />
 
-    <EditText
-        android:id="@+id/aula"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="Ingrese aula o lugar"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aula/Lugar"
+            android:textSize="20dp"
+            />
 
-        />
+        <EditText
+            android:id="@+id/aula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Ingrese aula o lugar"
 
-    <Button
-        android:id="@+id/boton1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="guardarUbicacion"
-        android:text="Continuar"
-        android:background="@drawable/boton"
-        android:textSize="20dp"
-        />
+            />
+
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Seleccionar tipo de reclamo"
+        android:text="Tipo de reclamo"
         android:textSize="30dp" />
 
     <LinearLayout
@@ -86,21 +77,21 @@
         android:layout_gravity="center"
         >
 
-    <Button
-        android:id="@+id/mantenimientoBoton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Mantenimiento"
-        android:textSize="20dp"
-
-        />
         <Button
-        android:id="@+id/tecnologiaBoton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tecnologia"
-        android:textSize="20dp"
-        />
+            android:id="@+id/mantenimientoBoton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mantenimiento"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:id="@+id/tecnologiaBoton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tecnologia"
+            android:textSize="20dp"
+            />
         <Button
             android:id="@+id/vinculosBoton"
             android:layout_width="match_parent"
@@ -119,15 +110,23 @@
             android:layout_height="match_parent"
             android:inputType="text"
             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        >
+
         <Button
-            android:id="@+id/continuar2"
+            android:id="@+id/boton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="guardarUbicacion"
             android:text="Continuar"
             android:background="@drawable/boton"
             android:textSize="20dp"
             />
-
     </LinearLayout>
 
 </LinearLayout>

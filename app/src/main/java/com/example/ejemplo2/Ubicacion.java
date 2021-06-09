@@ -1,23 +1,24 @@
+
 package com.example.ejemplo2;
 
 public class Ubicacion {
-    public Integer edificio;
-    public Integer piso;
-    public String aula;
+    private String edificio;
+    private String piso;
+    private String aula;
 
-    public Integer getEdificio() {
+    public String getEdificio() {
         return edificio;
     }
 
-    public void setEdificio(Integer edificio) {
+    public void setEdificio(String edificio) {
         this.edificio = edificio;
     }
 
-    public Integer getPiso() {
+    public String getPiso() {
         return piso;
     }
 
-    public void setPiso(Integer piso) {
+    public void setPiso(String piso) {
         this.piso = piso;
     }
 
