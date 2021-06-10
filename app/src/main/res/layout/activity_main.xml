@@ -4,10 +4,28 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android" >
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Realizar reclamo"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            />
+
+    </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ubicacion"
+        android:text="Selecciona ubicacion"
         android:textSize="30dp"
         />
 
@@ -67,7 +85,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tipo de reclamo"
+        android:text="Selecciona el tipo de reclamo"
         android:textSize="30dp" />
 
     <LinearLayout
@@ -83,7 +101,7 @@
             android:layout_height="wrap_content"
             android:text="Mantenimiento"
             android:textSize="20dp"
-
+            android:backgroundTint="#2B2B2B"
             />
         <Button
             android:id="@+id/tecnologiaBoton"
@@ -91,6 +109,7 @@
             android:layout_height="wrap_content"
             android:text="Tecnologia"
             android:textSize="20dp"
+            android:backgroundTint="#0E23AE"
             />
         <Button
             android:id="@+id/vinculosBoton"
@@ -98,6 +117,7 @@
             android:layout_height="wrap_content"
             android:text="Vinculos Sociales"
             android:textSize="20dp"
+            android:backgroundTint="#0E23AE"
             />
         <TextView
             android:layout_width="match_parent"
@@ -116,6 +136,7 @@
         android:layout_width="400dp"
         android:layout_height="match_parent"
         android:layout_gravity="center"
+        android:orientation="vertical"
         >
 
         <Button
@@ -127,6 +148,13 @@
             android:background="@drawable/boton"
             android:textSize="20dp"
             />
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
     </LinearLayout>
 
 </LinearLayout>

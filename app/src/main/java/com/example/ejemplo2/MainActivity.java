@@ -5,12 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,12 +26,20 @@ public class MainActivity extends AppCompatActivity {
     String textoSeleccionado;
     String textoSeleccionado2;
     EditText aula;
+    Button botonContinuar;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+    DatabaseReference mirootReference;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mirootReference = FirebaseDatabase.getInstance().getReference();
+
+        botonContinuar = findViewById(R.id.boton1);
         aula = findViewById(R.id.aula);
 
         DatosLista=new ArrayList<>();
@@ -64,6 +77,26 @@ public class MainActivity extends AppCompatActivity {
 
 
         textoSeleccionado2=spinner2.getItemAtPosition(posicion2).toString();
+
+        botonContinuar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String edificio;
+                String aulaIngresada;
+                String piso;
+                aulaIngresada=aula.getText().toString();
+                edificio=textoSeleccionado;
+                piso=textoSeleccionado2;
+
+                Map<String, Object> registroUbicacion = new HashMap<>();
+                registroUbicacion.put("edificio", edificio);
+                registroUbicacion.put("piso", piso);
+                registroUbicacion.put("aula", aulaIngresada);
+
+                mirootReference.child("Ubicacion").push().setValue(registroUbicacion);
+
+            }
+        });
 
     }
 

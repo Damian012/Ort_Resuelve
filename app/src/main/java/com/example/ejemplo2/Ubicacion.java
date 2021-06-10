@@ -6,6 +6,10 @@ public class Ubicacion {
     private String piso;
     private String aula;
 
+    public Ubicacion(){
+
+    }
+
     public String getEdificio() {
         return edificio;
     }
@@ -28,5 +32,10 @@ public class Ubicacion {
 
     public void setAula(String aula) {
         this.aula = aula;
+    }
+
+    @Override
+    public String toString() {
+        return edificio;
     }
 }
