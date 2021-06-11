@@ -1,0 +1,19 @@
+- Cada proyecto debe clasificarse según una categoría. Les recordamos que las mismas son: 
+Ciencia,salud y medio ambiente.
+Negocios
+Servicios a la comunidad
+Arte y cultura
+
+- Lo que se pedirá para la carga será: 
+*Título del proyecto
+* Abstract de 70 palabras (máximo)
+*Copete de un renglón
+* Una imagen representativa del proyecto/Logo en resolucion 800x800 (cuadrado)
+* Nombres e inicial del apellido de los integrantes del grupo
+https://view.genial.ly/60ae9b30ee7b710d124e08c5/presentation-sinergia
+https://www.youtube.com/watch?v=6j2kwH3NWBE
+6 al 11/6: Presentación del programa a estudiantes de 5to.
+14/6 al 2/7: Carga de proyectos en la home 
+5 al 13/7: Trabajo del CREA para la visualización de los proyectos
+A partir del 14/7: Visualización de los proyectos en la home
+25/8: Evento mas sinergia (a confirmar la fecha pero esa semana)
